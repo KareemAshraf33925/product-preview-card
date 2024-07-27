@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Fraunces", "serif","Montserrat";
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--Cream);
+   
+    display: grid;
+    place-items: center;
+}
+/* start-product-cart */
+#product-cart .container .card{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+    border-radius: 10px;
+
+}
+#product-cart .container{
+    margin: 90px 0px 50px;
+}
+#product-cart .container .card .fig img{
+    width: 300px;
+    object-fit: cover;
+    height: 500px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#product-cart .container .card  .card-info{
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: flex-start;
+    background-color: var(--White);
+    width: 300px;
+    height: 500px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    
+}
+#product-cart .container .card  .card-info .p-head{
+    opacity: 0.8;
+    margin: 30px 40px;
+      font-family: "Montserrat";
+      font-weight: 700;
+}
+#product-cart .container .card  .card-info h1{
+    font-size: 30px;
+    margin: 30px 40px;
+    
+}
+#product-cart .container .card  .card-info .p-info{
+    font-size: 14px;
+    margin: 0px 30px;
+    font-family: "Montserrat";
+    text-align: left;
+}
+#product-cart .container .card  .card-info .salary {
+    margin: 40px 0px;
+
+}
+#product-cart .container .card  .card-info .salary strong{
+    color: var(--Darkcyan);
+    font-size: 30px;
+}
+#product-cart .container .card  .card-info .salary del{
+    font-size: 14px;
+    margin-right: 60px;
+    opacity: 0.8;
+}
+
+
+#product-cart .container .card .card-info .salary{
+    display: flex;
+    justify-content:space-around ;
+    align-items: center;
+
+}
+#product-cart .container .card  .card-info button{
+    background-color: var(--Darkcyan);
+    color: var(--White);
+    padding: 13px 0px;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    margin: 0px 0px 0px 20px;
+    position: absolute;
+    bottom: 30px;
+    cursor: url(images/favicon-32x32.png),pointer;
+    
+}
+#product-cart .container .card  .card-info button img{
+    padding-right: 20px;
+}
+/* end-product-cart */
+/* media-query */
+@media(max-width:375px){
+    #product-cart .container .card{
+        display: flex;
+        flex-direction:column;
+       
+     
+     }
+     #product-cart .container .card .fig img{
+        width: 300px;
+       
+        height: 250px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+
+      
+    }
+    #product-cart .container .card  .card-info h1{
+        font-size:25px;
+        margin: 20px 40px;
+
+        
+    }
+    #product-cart .container .card  .card-info .p-info{
+        font-size: 12px;
+        margin: 0px 30px;
+       
+    }
+    #product-cart .container .card  .card-info .salary {
+        margin: 20px 0px;
+    
+    }
+    #product-cart .container .card  .card-info{
+        
+        width: 300px;
+        height: 400px;
+        
+        
+    }
+   
+   
+
+}
